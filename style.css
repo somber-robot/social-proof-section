@@ -128,6 +128,9 @@ p{
         background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
         font-size: 13px;
         padding-bottom: 2rem;
+        height: 100vh;
+        display: flex;
+        padding: 0;
     }
 
     .container {
