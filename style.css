@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
     font-family: var(--font);
+    font-size: 15px;
 }
 
 p{
@@ -120,4 +121,78 @@ p{
 .review {
     color: var(--lightpink);
     line-height: 1.25rem;
+}
+
+@media screen and (min-width: 55rem) {
+    body {
+        background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+        font-size: 13px;
+        padding-bottom: 2rem;
+    }
+
+    .container {
+        width: min(55rem, 100%);
+        margin: auto;
+        grid-template-columns: 42% 48%;
+        grid-template-rows: 12rem 14.5rem;
+        gap: 0;
+        column-gap: 10%;
+        row-gap: 2.5rem;
+    }
+
+    .section1{
+        text-align: left;
+    }
+
+    .heading{
+        max-width: 20rem;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .section2 {
+        justify-content: center;
+    }
+
+    .rating {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 21rem;
+    }
+
+    .rating img {
+        width: 12%;
+    }
+
+    .stars {
+        gap: 0.4rem;
+    }
+
+    .rating:nth-child(2){
+        margin: 0 auto;
+    }
+    
+    .rating:nth-child(3){
+        margin-left: auto;
+    }
+
+    .section3 {
+        grid-column: 1/3;
+        flex-direction: row;
+    }
+
+    .card:nth-child(1){
+        margin-bottom: auto;
+    }
+
+    .card:nth-child(2){
+        margin: auto;
+    }
+
+    .card:nth-child(3){
+        margin-top: auto;
+    }
 }
